@@ -1,0 +1,435 @@
+/* ==========================================================================
+Base
+========================================================================== */
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    padding:0;
+    height: 100%;
+    font-family: 'Source Sans Pro','Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+/* ==========================================================================
+Typography
+========================================================================== */
+
+h2,h3,h4 {
+    font-family: 'Source Sans Pro';
+}
+
+h1 {
+  font-size: 76px;
+  line-height: 78px;
+  margin-top: 52px;
+  margin-bottom: 26px;
+  font-weight: 600;
+  font-family: 'Raleway';
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 47px;
+  line-height: 52px;
+  margin-top: 52px;
+  margin-bottom: 26px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 29px;
+  line-height: 52px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+/* Sanitation */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}
+
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+a {
+    color: #2CA0E3;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.white {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover, a:focus {
+    color: #217CB0;
+    text-decoration: none;
+}
+p {
+    color: #8c9398;
+    word-spacing: 1px;
+}
+
+.section-padding {
+    padding-top: 4.44em;
+    padding-bottom: 4.44em;
+}
+.dark-bg {
+    background: #f3f5f8;
+}
+.light-bg {
+    background-color: #fff;
+}
+
+
+
+.inner {
+    /*padding-top: 200px;*/
+}
+.right {
+    border-right: 1px dotted #6A6969;
+}
+
+.left {
+ border-left: 1px dotted #6A6969;   
+}
+
+.well{
+        background-color: rgba(255,255,255,0.3);
+        border: 2px solid #fff;
+}
+
+/* ==========================================================================
+Navigation
+========================================================================== */
+.navbar {
+    background: transparent;
+    border: none;
+}
+.navbar-default{
+    border: none;
+}
+.navbar-default .navbar-collapse {
+    border: none;
+    box-shadow: none;
+}
+.navbar-toggle{
+    border: rgba(0,0,0,0.1);
+}
+ 
+.navbar-default .navbar-nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+}
+
+
+.navbar-nav {
+    display: inline-block;
+    float: none;
+    margin: 0;
+}
+ 
+ .navbar-collapse.collapse {
+         text-align: center; 
+         /*height: auto !important;*/
+         padding-bottom: 0;
+         /*overflow: visible !important;*/
+         box-shadow: none;
+
+ }
+
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: rgba(255,255,255,0.1);
+}
+/* ==========================================================================
+Hero
+========================================================================== */
+.hero {
+    background: url('../img/hero-flex-blue.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 1em 0 1.11em 0;
+    height: auto;
+    max-width: 100%;
+}
+
+
+.hero h1 {
+    /*font-size: 84px;*/
+    letter-spacing: 8px;
+    font-weight: 700;
+}
+
+
+.hero h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.hero h2::after {
+    content: " ";
+    border: solid 1px #fff;
+    display: block;
+    width: 55px;
+    margin: 0 auto;
+}
+.hero p {
+    letter-spacing: 1px;
+}
+
+@media  (max-width: 568px) {
+    .hero h1 {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+    .hero h2 {
+        font-size: 18px;
+    }
+    .inner {
+        /*padding-top: 20px;*/
+    }
+}
+.contact-btn {
+    border: 2px solid #2CA0E3;
+    background-color: #2CA0E3;
+    padding: 20px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 60px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.contact-btn:hover, .contact-btn:focus {
+    
+}
+.hero .contact-btn:hover, .hero .contact-btn:focus {
+    opacity: 1;
+    border-color: #217CB0;
+    background-color: #217CB0;
+    color: #fff;
+}
+
+
+/* ==========================================================================
+About
+========================================================================== */
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #6A6969;
+    margin-bottom: 40px;
+}
+/* ==========================================================================
+Resume
+========================================================================== */
+.resume {
+        background: url('../img/dunking_dark.jpg') no-repeat left center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    min-height: 400px;
+}
+
+.resume p {
+    color: #fff;
+}
+.resume-btn {
+    border: 2px solid #fff;
+    padding: 20px 40px;
+    background-color: rgba(255,255,255,0.5);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 127px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.resume-btn:hover {
+    background-color: rgba(255,255,255,1);
+}
+
+/*MODAL STYLES*/
+
+    .iframe-container {    
+    padding-bottom: 60%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* ==========================================================================
+Certs & Experience
+========================================================================== */
+
+
+.certs p {
+    line-height: 1.25;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.certs  h3 {
+    color: #2CA0E3;
+    font-weight: 700;
+}
+.certs h4 {
+    color: #217CB0;
+}
+
+
+/* ==========================================================================
+Testimonial
+========================================================================== */
+
+.testimonial {
+    background-attachment: fixed;
+    background: url('../img/rehab_dark.jpg') no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 540px;
+}
+
+.testimonial h2 {
+    color: #fff;
+    color: rgba(255,255,255,0.8);
+    font-family: "Source Sans Pro";
+
+}
+
+.quote {
+padding-top: 50px;
+}
+
+
+
+blockquote>footer {
+    color: orange;
+    font-size: 20px;
+}
+
+blockquote>footer>cite {
+    color: #CCCCCC;
+    font-variant: small-caps;
+
+}
+
+/* ==========================================================================
+Connect
+========================================================================== */
+
+.social-links {
+    
+    color: #2CA0E3;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.social-links li:hover {
+        -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    color: #217CB0;
+
+}
+
+/* ==========================================================================
+Footer
+========================================================================== */
+
+footer.blue {
+    height: 16px;
+    background-color: #217CB0;
+    margin: 0;
+    padding:0;
+    width: 100%
+
+}
+
+
+/* ==========================================================================
+Waypoints & Delays
+========================================================================== */
+.delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
+.delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
+.delay-15s { animation-delay: 1.5s; -webkit-animation-delay: 1.5s; }
+.delay-2s { animation-delay: 2s; -webkit-animation-delay: 2s; }
+.delay-25s { animation-delay: 2.5s; -webkit-animation-delay: 2.5s; }
+
+
+
+
+
+
+
+
+
